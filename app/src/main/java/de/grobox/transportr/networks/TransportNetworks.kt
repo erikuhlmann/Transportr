@@ -605,6 +605,15 @@ private val networks = arrayOf(
                         description = R.string.np_desc_usny,
                         status = ALPHA,
                         factory = { NewyorkProvider(NAVITIA) }
+                    ),
+                    TransportNetwork(
+                        id = NetworkId.MASSACHUSETTS,
+                        name = R.string.np_name_massachusetts,
+                        description = R.string.np_desc_massachusetts,
+                        agencies = R.string.np_desc_massachusetts_networks,
+                        logo = R.drawable.network_massachusetts_logo,
+                        status = ALPHA,
+                        factory = { MassachusettsProvider(NAVITIA) }
                     )
                 )
             ),
